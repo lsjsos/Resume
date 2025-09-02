@@ -1,0 +1,429 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.profile-info p {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.contact-note {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 4px 8px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Section Headers */
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+/* Introduce Section */
+.introduce-section {
+    margin-bottom: 40px;
+}
+
+.introduce-section p {
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.last-updated {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 40px;
+}
+
+.skill-category {
+    margin-bottom: 25px;
+}
+
+.skill-category h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-items span {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #bdc3c7;
+}
+
+/* Experience Section */
+.experience-section {
+    margin-bottom: 40px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.experience-header {
+    margin-bottom: 15px;
+}
+
+.experience-date {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.experience-company {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.current {
+    background-color: #27ae60;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+.duration {
+    color: #7f8c8d;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.experience-detail {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 2px solid #e9ecef;
+}
+
+.experience-period {
+    font-size: 13px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.experience-position {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.experience-description {
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.experience-description li {
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.skill-keywords {
+    background-color: #e8f4f8;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+.skill-keywords strong {
+    color: #2980b9;
+}
+
+/* Education Section */
+.education-section {
+    margin-bottom: 40px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #9b59b6;
+}
+
+.education-date {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.education-school {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 3px;
+}
+
+.education-major {
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+}
+
+/* ETC Section */
+.etc-section {
+    margin-bottom: 40px;
+}
+
+.etc-item {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #e67e22;
+}
+
+.etc-date {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 3px;
+}
+
+.etc-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 3px;
+}
+
+.etc-description {
+    font-size: 12px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-info h1 {
+        font-size: 24px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .skill-items {
+        justify-content: center;
+    }
+    
+    .experience-item {
+        padding: 15px;
+    }
+    
+    .experience-detail {
+        padding-left: 10px;
+    }
+    
+    .experience-description {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .profile-info h1 {
+        font-size: 20px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-links a {
+        width: 120px;
+        text-align: center;
+    }
+    
+    .skill-items span {
+        font-size: 11px;
+        padding: 3px 8px;
+    }
+    
+    .experience-item {
+        padding: 10px;
+    }
+    
+    .experience-detail {
+        padding-left: 5px;
+    }
+    
+    .experience-description {
+        padding-left: 5px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .profile-section {
+        border-bottom: 2px solid #333;
+    }
+    
+    .experience-item,
+    .education-item,
+    .etc-item {
+        break-inside: avoid;
+        background-color: transparent;
+        border: 1px solid #ddd;
+    }
+    
+    .social-links a {
+        border: 1px solid #333;
+        background-color: transparent;
+        color: #333;
+    }
+    
+    .skill-items span {
+        border: 1px solid #333;
+        background-color: transparent;
+        color: #333;
+    }
+}
